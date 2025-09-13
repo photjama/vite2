@@ -1,0 +1,171 @@
+/* ================= BODY & ROOT ================= */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #084e1e; /* Dark gray for text */
+}
+
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+
+
+/* ================= HEADER ================= */
+header {
+  background: linear-gradient(135deg, #aeeac0, #e9f4ef); /* Light green gradient */
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid #27ae60; /* Dark green border */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #040806; /* Green */
+  letter-spacing: -0.5px;
+}
+
+header p {
+  color: #55efc4; /* Light green */
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* ================= LAYOUT ================= */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= CARD ================= */
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border-top: 5px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(46, 204, 113, 0.25); /* Green glow */
+}
+
+.card.blue {
+  border-color: #27ae60; /* Dark green */
+}
+.card.cyan {
+  border-color: #2ecc71; /* Green */
+}
+.card.sky {
+  border-color: #1abc9c; /* Mint green */
+}
+
+/* ================= FORM ================= */
+form input,
+form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #45a24f;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.25);
+}
+
+/* ================= BUTTON ================= */
+/*.add-button {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #27ae60, #a9ddbf);
+  color: rgb(120, 37, 37);
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.add-button:hover {
+  background: linear-gradient(45deg, #1e8449, #27ae60);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse:separate;
+  border-spacing: 1px 1px;
+  color: #210303;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: center;
+  background: #a9dea6;
+}
+
+/* แก้ไขส่วนนี้เพื่อให้ font-weight เป็น normal */
+th {
+  background: #7cc688;
+  font-weight: normal; /* เปลี่ยนจาก 600 เป็น normal */
+  color: #044a21;
+}
+
+
+
+
+
+
+/* ================= GPA CARD ================= */
+.gpa-card {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(46, 204, 113, 0.4);
+}
+
+.gpa-card h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.gpa-card p {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
