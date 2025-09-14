@@ -66,12 +66,11 @@ const App: React.FC = () => (
     <div className="layout">
       <div className="left-column">
         <section><h2><Book /> เพิ่มรายวิชา</h2><CourseForm /></section>
-        <section><h2><Trash2 /> รายวิชาที่ถอนแล้ว</h2><CourseDrop /></section>
+        <section><h2><Layers /> รายวิชาที่ลงทะเบียน</h2><CourseList /></section>
       </div>
 
       <div className="right-column">
-        <h2><Layers /> รายวิชาที่ลงทะเบียน</h2>
-        <CourseList />
+        <section><h2><Trash2 /> รายวิชาที่ถอนแล้ว</h2><CourseDrop /></section>
       </div>
     </div>
 
